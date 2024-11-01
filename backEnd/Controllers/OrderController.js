@@ -3,7 +3,7 @@ import orderModel from "../Models/OrderModel.js";
 import userModel from "../Models/UserModel.js";
 import { Stripe } from 'stripe'
 
-const stripe=new Stripe("sk_test_51Q9KWvH91vuO3TYQTBtW7vx6v2TELRYBzy3KdN5eHTvHBqUHHqs9GuBudcozEi0EAbyQFhBth8QoEsjd4G6WLxrW00OImiSwJW")
+const stripe=new Stripe("TYPE_YOUR_STRIPE_PRIVATE_LINK_HERE")
 
 // placing user order for frontend
 const  placeOrder=async(req,res)=>{
