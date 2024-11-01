@@ -1,0 +1,10 @@
+.foodList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.sHead{
+    font-size: 40px;
+}

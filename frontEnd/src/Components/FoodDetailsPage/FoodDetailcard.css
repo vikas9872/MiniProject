@@ -1,0 +1,52 @@
+.foodDetailBox{
+    display: flex;
+    flex-direction: column;
+}
+.foodDetailInfotwoCol{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+.foodDetailInfo{
+    background: rgba(240, 102, 37, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 80%;
+}
+.foodDetailName,.mDetailratings,.foodDetailPrice,.restaurantName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+.foodDetailImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fDetailName,.foodDetailPrice{
+    font-size: xx-large;
+}
+.restauName{
+    font-size: x-large;
+}
+.rForm{
+    background: rgba(240, 102, 37, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 20%;
+}
+.foodDetailBox{
+    gap: 24px;
+    display: flex;
+}
+.descriptionDetial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}

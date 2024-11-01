@@ -1,0 +1,27 @@
+.review-list {
+  width: 100%;
+  background: rgba(240, 102, 37, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.review-item {
+  padding: 10px;
+}
+
+.review-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.review-item p {
+  margin: 5px 0;
+}
+
+.reviewHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

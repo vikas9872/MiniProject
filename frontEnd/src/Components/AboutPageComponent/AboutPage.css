@@ -1,0 +1,119 @@
+.aboutUsContentBox{
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headLine{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 20vh;
+}
+.headLine h1{
+    font-size:  100px;
+}
+.headLine h1.abtPart{
+    color: #f06225;
+}
+.mainContentBox{
+    display: flex;
+    height: 90vh;
+    padding: 8px;
+}
+.mainContentBoxLeftPart{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abtimg{
+    height: 80%;
+    width: 80%;
+}
+.mainContentRightBoxPart{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aHead{
+    font-size: 40px;
+}
+.animContentPart{
+    margin-top: 24px;
+}
+.animContentPart p{
+    font-size: 24px;
+}
+.btnPart{
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.firstBtnPart{
+    display: flex;
+    gap: 8px;
+}
+.ftbtns{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f06225;
+    border: 3px solid #f06225;
+    color: #ffff;
+    border-radius: 8px;
+}
+.secondBtnPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sdbtns{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f06225;
+    border: 3px solid #f06225;
+    color: #ffff;
+    border-radius: 8px;
+}
+@media screen and (max-width:426px) {
+    .headLine h1{
+        height: 10vh;
+        font-size:  50px;
+        /* height: auto; */
+    }
+    .mainContentBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .headLinePart{
+        font-size: 14px;
+    }
+    .animContentPart{
+        margin-top: 12px;
+    }
+    .animContentPart p{
+        font-size: 12px;
+    }
+    .mainContentBoxLeftPart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .mainContentRightBoxPart{
+        width: 100%;
+        padding: 0 12px;
+    }
+    .abtimg{
+        height: 80%;
+        width: 80%;
+    }
+}

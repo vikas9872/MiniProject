@@ -1,0 +1,47 @@
+.categoryBox{
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.menuHeading{
+    margin: auto;
+    padding: auto;
+}
+
+.mHead{
+    font-size: 100px;
+}
+.menuHeading span{
+    color: #f06625;
+}
+.categoryText{
+    font-size: 40px;
+}
+.menuList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+.menulistItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.menulistItem .active{
+    border: 2px solid #f06625;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:426px){
+    .menuHeading h1{
+        font-size:  50px;
+    }
+    .menuContentBox{
+        height: auto;
+        width: auto;
+        padding-top: 50px;
+    }
+} 

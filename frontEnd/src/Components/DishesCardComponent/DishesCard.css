@@ -1,0 +1,53 @@
+.mainCard {
+    height: 400px;
+    width: 320px;
+    background: rgba(240, 102, 37, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 8px;
+}
+.imgContainer{
+   height: 40%; 
+}
+.simg{
+    height: 100%;
+    width: 100%;
+}
+.checked {
+    color: #f06625;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+.name-price-description{
+    height: 50%;
+}
+.namebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.dishName{
+    font-size: 32px;
+    color: #f06625;
+}
+.pricebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 20%;
+}
+.dishPrice{
+    color: #f06625;
+}
+.descriptionbox{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

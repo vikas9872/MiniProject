@@ -1,0 +1,31 @@
+.foodItem{
+    background: rgba(240, 102, 37, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.foodInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgContainer{
+    position: relative;
+}
+.add{
+    width: 32px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+}
+.itemCounter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}

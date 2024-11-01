@@ -1,0 +1,59 @@
+.orderBox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+.orderTitle{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.placeOrderLeft{
+    width: 50%;
+    margin: auto;
+    padding: auto;
+}
+.placeOrderLeft input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #f06625;
+    border-radius: 8px;
+    outline-color: #f06625;
+}
+.multiFields{
+    display: flex;
+    gap: 8px;
+}
+.placeOrderRight{
+    width: 50%;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.placeOrderForm{
+    outline: none;
+}
+.cartTotalDetailBox{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:426px){
+    .orderBox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    .placeOrderLeft,.placeOrderRight{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

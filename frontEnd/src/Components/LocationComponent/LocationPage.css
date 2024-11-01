@@ -1,0 +1,10 @@
+.locationPage {
+    height: 100vh; /* Full height of the viewport */
+    width: 100%;   /* Full width */
+    position: relative; /* Allow absolute positioning of child elements */
+}
+
+.mapContainer {
+    height: 100%;  /* Fill the height of the parent */
+    width: 100%;   /* Fill the width of the parent */
+}

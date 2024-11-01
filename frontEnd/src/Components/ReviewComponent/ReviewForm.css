@@ -1,0 +1,41 @@
+.formBox{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.formMainBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+}
+.rateNum,.commentBox{
+  width: 100%;
+}
+.rateNum input{
+  width: 100%;
+  height: 24px;
+  outline: #f06625;
+  border: 2px solid #f06625;
+  border-radius: 8px;
+  text-align: center;
+}
+.commentBox textarea{
+  height: 200px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #f06625;
+  outline: #f06625;
+  padding: 8px;
+}
+.reviewsubmitbtn{
+  outline: none;
+  border: 2px solid #f06625;
+  height: 32px;
+  background-color: #f06625;
+  border-radius: 8px;
+  width: 100%;
+  color: #ffff;
+}
