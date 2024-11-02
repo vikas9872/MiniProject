@@ -50,3 +50,12 @@
     align-items: center;
     padding: 8px;
 }
+
+@media screen and (max-width:426px){
+    .foodDetailInfotwoCol{
+        flex-direction: column;
+    }
+    .foodDetailInfo,.rForm{
+        width: 100%;
+    }
+}
