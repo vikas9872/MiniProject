@@ -1,27 +1,38 @@
 import { StoreContext } from "../../StoreContextComponent/storeContext.js";
 import FoodCard from "../FoodCardComponent/FoodCard.js";
-import './SubCategory.css'
-import React, { useContext } from 'react'
+import './SubCategory.css';
+import React, { useContext } from 'react';
 
 const SubCategory = ({ category, setCategory }) => {
-  const {flist}=useContext(StoreContext)
-  const filteredItems = flist.filter(item => category === "all" || category === item.category);
+  const { flist } = useContext(StoreContext);
+
+  console.log("flist:", flist);
+  console.log("category:", category);
+
+  const filteredItems = flist.filter(item => {
+    console.log("Filtering item:", item);
+    return category === "all" || category === item.category;
+  });
+
   return (
     <div className="foodDisplay">
       <div className="foodList">
-        {filteredItems.map((item, index) => {
-            return (
-              <FoodCard
-                key={index}
-                id={item._id}
-                name={item.name}
-                price={item.price}
-                image={item.image}
-              />
-            )
-        })}
+        {filteredItems.length > 0 ? (
+          filteredItems.map((item, index) => (
+            <FoodCard
+              key={index}
+              id={item._id}
+              name={item.name}
+              price={item.price}
+              image={item.image}
+            />
+          ))
+        ) : (
+          <p>No items found for this category.</p>
+        )}
       </div>
     </div>
-  )
-}
-export default SubCategory
+  );
+};
+
+export default SubCategory;

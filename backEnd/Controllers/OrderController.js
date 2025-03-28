@@ -1,9 +1,9 @@
-import { CurrencyCodes } from "validator/lib/isISO4217.js";
 import orderModel from "../Models/OrderModel.js";
 import userModel from "../Models/UserModel.js";
-import { Stripe } from 'stripe'
-
-const stripe=new Stripe("TYPE_YOUR_STRIPE_PRIVATE_LINK_HERE")
+import { Stripe } from 'stripe';
+import dotenv from 'dotenv'
+dotenv.config()
+const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
 
 // placing user order for frontend
 const  placeOrder=async(req,res)=>{
