@@ -6,7 +6,7 @@ const authMiddleware=async(req,res,next)=>{
         return res.json({success: false,message: "Not authorised"})
     }
     try{
-        const decodeToken=jwt.verify(token,  "random#secret");
+        const decodeToken=jwt.verify(token,  process.env.JWT_SECRET);
         req.body.userId=decodeToken.id;
         next();
     }catch(error){
