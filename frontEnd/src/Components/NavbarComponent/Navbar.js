@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { StoreContext } from '../../StoreContextComponent/storeContext';
 import { toast, ToastContainer } from 'react-toastify';

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { StoreContext } from '../../StoreContextComponent/storeContext'
 import {useNavigate} from 'react-router-dom'
 const CartPage = () => {
-    const { cartItems, flist, removeFromCart, getTotalAmount } = useContext(StoreContext)
+    const { cartItems, flist, removeFromCart } = useContext(StoreContext)
     const navigate=useNavigate();
     const handleProceed=()=>{
         navigate("/placeorder")
