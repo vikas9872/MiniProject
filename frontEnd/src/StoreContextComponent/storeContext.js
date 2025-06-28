@@ -103,7 +103,7 @@ const StoreContextProvider = (props) => {
 
 
     // Login Page
-    const url = "http://localhost:3000"
+    const url = "https://foooodcourttttt.onrender.com"
     const [token, setToken] = useState(localStorage.getItem('token') || "")
     const [user, setUser] = useState("");
     const [isFirstLogin, setIsFirstLogin] = useState(true);
