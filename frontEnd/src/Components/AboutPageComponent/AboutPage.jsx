@@ -14,7 +14,7 @@ const AboutPage = () => {
                 </div>
                 <div className="mainContentBox" data-aos="fade-up">
                     <div className="mainContentBoxLeftPart">
-                        <img src="/Images/aboutUsimg.png" alt="about us img" className='abtimg' />
+                        <img src="./Images/aboutUsImg.png" alt="about us img" className='abtimg' />
                     </div>
                     <div className="mainContentRightBoxPart" >
                         <div className="headLinePart">
