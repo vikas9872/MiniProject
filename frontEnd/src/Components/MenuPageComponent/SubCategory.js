@@ -11,7 +11,8 @@ const SubCategory = ({ category, setCategory }) => {
 
   const filteredItems = flist.filter(item => {
     console.log("Filtering item:", item);
-    return category === "all" || category === item.category;
+    return category === "all" || item.category?.toLowerCase() === category.toLowerCase();
+;
   });
 
   return (
