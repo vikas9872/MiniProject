@@ -13,7 +13,10 @@ const port= process.env.PORT || 3000
 
 // middleware
 app.use(express.json()) // Input received from the front end is parsed
-app.use(cors()) // Helps to connect backend to frontend
+app.use(cors({
+    origin: "https://foodcourttt.onrender.com/"
+    credentials: true
+})) // Helps to connect backend to frontend
 
 // Connect Database 
 connectDB()
