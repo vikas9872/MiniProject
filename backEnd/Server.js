@@ -33,12 +33,12 @@ app.use("/api/food", foodRouter)
 app.use("/api/order", orderRouter)
 app.use('/api/reviews', reviewsRouter);
 
-// Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, '../frontEnd')))
+// Serve static files from the React frontend app's build folder
+app.use(express.static(path.join(__dirname, '../frontEnd/build')))
 
 // Catch-all handler to serve React's index.html for any non-API routes
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontEnd/index.js'));
+    res.sendFile(path.join(__dirname, '../frontEnd/build/index.html'));
 });
 
 app.listen(port, () => {
